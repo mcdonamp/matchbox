@@ -1,30 +1,27 @@
 {
-  "name": "geofire",
-  "description": "Location-based querying and filtering using Firebase",
+  "name": "NODE_LIBRARY_NAME",
+  "description": "Description",
   "version": "0.0.0",
-  "author": "Firebase <support@firebase.com> (https://www.firebase.com/)",
-  "homepage": "https://github.com/firebase/geofire-js/",
+  "author": "COMPANY_NAME <email@company.com> (https://www.company.com/)",
+  "homepage": "https://github.com/COMPANY_NAME/REPO_NAME",
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/geofire-js.git"
+    "url": "https://github.com/COMPANY_NAME/REPO_NAME.git"
   },
   "bugs": {
-    "url": "https://github.com/firebase/geofire-js/issues"
+    "url": "https://github.com/COMPANY_NAME/REPO_NAME/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://firebase.mit-license.org/"
+      "url": "http://COMPANY_NAME.mit-license.org/"
     }
   ],
   "keywords": [
-    "geoquery",
-    "location",
     "firebase",
-    "realtime",
-    "geolocation"
+    "realtime"
   ],
-  "main": "dist/geofire.min.js",
+  "main": "dist/LIBRARY_NAME.min.js",
   "files": [
     "dist/**",
     "LICENSE",
@@ -32,8 +29,7 @@
     "package.json"
   ],
   "dependencies": {
-    "firebase": "1.1.x",
-    "rsvp": "~3.0.13"
+    "firebase": "1.1.x"
   },
   "devDependencies": {
     "gulp": "^3.5.6",

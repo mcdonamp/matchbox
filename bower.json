@@ -1,30 +1,26 @@
 {
-  "name": "geofire",
-  "description": "Location-based querying and filtering using Firebase",
+  "name": "BOWER_LIBRARY_NAME",
+  "description": "description",
   "version": "0.0.0",
   "authors": [
-    "Firebase <support@firebase.com> (https://www.firebase.com/)"
+    "COMPANY_NAME <email@company.com> (https://www.company.com/)"
   ],
-  "homepage": "https://github.com/firebase/geofire-js/",
+  "homepage": "https://github.com/COMPANY_NAME/REPO_NAME/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/geofire-js.git"
+    "url": "https://github.com/firebase/COMPANY_NAME/REPO_NAME"
   },
   "license": "MIT",
   "keywords": [
-    "geoquery",
-    "location",
     "firebase",
-    "realtime",
-    "geolocation"
+    "realtime"
   ],
-  "main": "dist/geofire.min.js",
+  "main": "dist/LIBRARY_NAME.min.js",
   "ignore": [
     "**/.*",
     "src",
     "build",
     "tests",
-    "examples",
     "node_modules",
     "bower_components",
     "firebase.json",
@@ -33,8 +29,7 @@
     "changelog.txt"
   ],
   "dependencies": {
-    "firebase": "1.1.x",
-    "rsvp": "~3.0.13"
+    "firebase": "1.1.x"
   },
   "devDependencies": {
     "jasmine": "~2.0.0"

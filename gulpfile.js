@@ -32,8 +32,9 @@ var paths = {
     dest: {
       dir: "dist",
       files: {
-        unminified: "geofire.js",
-        minified: "geofire.min.js"
+        //STEP 1: Change file names to appropriate output names
+        unminified: "LIBRARY_NAME.js",
+        minified: "LIBRARY_NAME.min.js"
       }
     }
   },
@@ -41,8 +42,8 @@ var paths = {
   tests: {
     config: "tests/karma.conf.js",
     files: [
+      //STEP 2: Add in other source files necessary to test
       "bower_components/firebase/firebase.js",
-      "bower_components/rsvp/rsvp.min.js",
       "src/*.js",
       "tests/specs/*.spec.js"
     ]
@@ -89,14 +90,6 @@ gulp.task("scripts", function() {
 
     // Write minified version to the distribution directory
     .pipe(gulp.dest(paths.scripts.dest.dir))
-
-    // Write minified version to the examples directories
-    .pipe(gulp.dest("examples/fish1/js/vendor/"))
-    .pipe(gulp.dest("examples/fish2/js/vendor/"))
-    .pipe(gulp.dest("examples/fish3/js/vendor/"))
-    .pipe(gulp.dest("examples/sfVehicles/js/vendor/"))
-    .pipe(gulp.dest("examples/queryBuilder/js/vendor/"))
-    .pipe(gulp.dest("examples/html5Geolocation/js/vendor/"));
 });
 
 /* Uses the Karma test runner to run the Jasmine tests */
